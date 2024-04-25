@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles/my-fonts.css" />
+    <link rel="stylesheet" href="../assets/styles/reset.css">
+    <link rel="stylesheet" href="../assets/styles/main.css">    
+    <script src="../assets/scripts/script.js"></script>
+    <title>Carrot cake</title>
+</head>
+<body>
+    <main>
+        <section class="section-first">
+            <div class="contain-img">
+                <img
+                    class="background-image"
+                    src="../assets/images/carrot-cake.webp"
+                    alt="Carrot cake as blurred background"
+                />
+                <img
+                    class="main-img" 
+                    src="../assets/images/carrot-cake.webp"
+                    alt="Carrot cake image">
+            </div>
+            <div class="upper-part">
+                <p>ORDER+</p>
+                <button>
+                    <img src="../assets/images/icons/shopping-cart-solid.svg" alt="shopping cart icon">
+                </button>
+
+            </div>
+        </section>
+        <section class="section-second">
+            <div class="backround-container">
+                <div class="name-container">
+                    <p><strong>Carrot Cake</strong></p>
+                </div>
+                <div class="small-container">
+                    <p>150g</p>
+                    <div class="duration">
+                        <p>10min</p>
+                        <img src="../assets/images/icons/clock.webp" alt="clock">
+                    </div>
+                    <div class="rating-container">
+                        <p>4.8</p>
+                        <span class="checked">★</span>
+                    </div>
+                </div>
+                <div class="ingredients">
+                    <div class="inner-text">
+                        <p><strong>Ingredients</strong></p>
+                    </div>
+                    <div class="checked-ingredients">
+                        <label class="container">Flour
+                        </label>
+                        <label class="container">Carrot
+                        </label>
+                        <label class="container">Eggs
+                        </label>
+                        <label class="container">Brown Sugar
+                        </label>
+                        <label class="container">Vanilla Extract
+                        </label>
+                        <label class="container">Oil
+                        </label>
+                        <label class="container">Cream Cheese
+                        </label>
+                         <label class="container">Applesauce
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Cinnamon powder
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Nuts
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="price-and-edit">
+                    <p id="price" data-initial-price="2200">2200AMD</p>
+                    <div class="signs">
+                        <button class="plus-button" onclick="addition()">+</button>
+                        <p id="quantity">0</p>
+                        <button class="minus-button" onclick="subtraction()">-</button>
+                    </div>
+                </div>
+                <div class="order-container">
+                    <button class="order-btn"><strong>ORDER</strong></button>
+                </div>
+            </div>
+            
+        </section>
+            
+    </main>
+</body>
+</html>

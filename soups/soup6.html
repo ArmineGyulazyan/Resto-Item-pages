@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles/my-fonts.css" />
+    <link rel="stylesheet" href="../assets/styles/reset.css">
+    <link rel="stylesheet" href="../assets/styles/main.css">    
+    <script src="../assets/scripts/script.js"></script>
+    <title>Stuffed Pepper Soup</title>
+</head>
+<body>
+    <main>
+        <section class="section-first">
+            <div class="contain-img">
+                <img
+                    class="background-image"
+                    src="../assets/images/Stuffed-Pepper-Soup.webp"
+                    alt="Stuffed Pepper Soup as blurred background"
+                />
+                <img
+                    class="main-img" 
+                    src="../assets/images/Stuffed-Pepper-Soup.webp"
+                    alt="Stuffed Pepper Soup image">
+            </div>
+            <div class="upper-part">
+                <p>ORDER+</p>
+                <button>
+                    <img src="../assets/images/icons/shopping-cart-solid.svg" alt="shopping cart icon">
+                </button>
+
+            </div>
+        </section>
+        <section class="section-second">
+            <div class="backround-container">
+                <div class="name-container">
+                    <p><strong>Stuffed Pepper Soup</strong></p>
+                </div>
+                <div class="small-container">
+                    <p>250g</p>
+                    <div class="duration">
+                        <p>20min</p>
+                        <img src="../assets/images/icons/clock.webp" alt="clock">
+                    </div>
+                    <div class="rating-container">
+                        <p>5</p>
+                        <span class="checked">★</span>
+                    </div>
+                </div>
+                <div class="ingredients">
+                    <div class="inner-text">
+                        <p><strong>Ingredients</strong></p>
+                    </div>
+                    <div class="checked-ingredients">
+                        <label class="container">Beef
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Onion
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Garlic cloves
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Canola Oil
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Tomato
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Tomato sauce
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                         <label class="container">Rice
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Bell Pepper
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="price-and-edit">
+                    <p id="price" data-initial-price="2700">2700AMD</p>
+                    <div class="signs">
+                        <button class="plus-button" onclick="addition()">+</button>
+                        <p id="quantity">0</p>
+                        <button class="minus-button" onclick="subtraction()">-</button>
+                    </div>
+                </div>
+                <div class="order-container">
+                    <button class="order-btn"><strong>ORDER</strong></button>
+                </div>
+            </div>
+            
+        </section>
+            
+    </main>
+</body>
+</html>
