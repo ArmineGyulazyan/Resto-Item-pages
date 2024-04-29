@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    <script src="./assets/scripts/script.js"></script>
+    <title>Shopping Cart</title>
+    
+</head>
+<body>
+    <section class="upper-section">
+        <div class="container">
+            <button class="backward-btn">&#60;</button>
+            <p>Order Cart</p>
+            <button class="empty-btn" onclick="empty_list('list')">Empty list</button>
+        </div>
+        <div id="list" class="item-list">
+            <ul>
+                <li id="1" class="container">
+                    <img class="element-img" src="./assets/images/carrot-cake.webp" alt="">
+                    <div class="item-descr">
+                        <p>Carrot Cake</p>
+                        <div class="description-container">
+                            <p id="price1" data-initial-price="2000">2000AMD</p>
+                            <div class="signs">
+                                <button class="plus-button" onclick="addition('quantity1','price1')">+</button>
+                                <p id="quantity1">0</p>
+                                <button class="minus-button" onclick="subtraction('quantity1','price1')">-</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="delete-btn" onclick="delete_item('1')">-</button>
+                </li>
+                <li id="2" class="container">
+                    <img class="element-img" src="./assets/images/carrot-cake.webp" alt="">
+                    <div class="item-descr">
+                        <p>Carrot Cake</p>
+                        <div class="description-container">
+                            <p id="price2" data-initial-price="2000">2000AMD</p>
+                            <div class="signs">
+                                <button class="plus-button" onclick="addition('quantity2','price2')">+</button>
+                                <p id="quantity2">0</p>
+                                <button class="minus-button" onclick="subtraction('quantity2','price2')">-</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="delete-btn" onclick="delete_item('2')">-</button>
+                </li>
+                <li id="3" class="container">
+                    <img class="element-img" src="./assets/images/brownie-ice-cream.webp" alt="">
+                    <div class="item-descr">
+                        <p>Carrot Cake</p>
+                        <div class="description-container">
+                            <p id="price3" data-initial-price="2000">2000AMD</p>
+                            <div class="signs">
+                                <button class="plus-button" onclick="addition('quantity3','price3')">+</button>
+                                <p id="quantity3">0</p>
+                                <button class="minus-button" onclick="subtraction('quantity3','price3')">-</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="delete-btn" onclick="delete_item('3')">-</button>
+                </li>
+                <li id="4" class="container">
+                    <img class="element-img" src="./assets/images/brownie-ice-cream.webp" alt="">
+                    <div class="item-descr">
+                        <p>Carrot Cake</p>
+                        <div class="description-container">
+                            <p id="price4" data-initial-price="2000">2000AMD</p>
+                            <div class="signs">
+                                <button class="plus-button" onclick="addition('quantity4','price4')">+</button>
+                                <p id="quantity4">0</p>
+                                <button class="minus-button" onclick="subtraction('quantity4','price4')">-</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="delete-btn" onclick="delete_item('4')">-</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="bottom-section">
+        <div class="total-container">
+            <p id="total-price">Total:priceAMD</p>
+            <button class="pay-btn">Pay</button>            
+        </div>
+    </section>
+</body>
+</html>

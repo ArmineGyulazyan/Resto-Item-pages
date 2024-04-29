@@ -27,6 +27,7 @@
                 <p>ORDER+</p>
                 <button>
                     <img src="../assets/images/icons/shopping-cart-solid.svg" alt="shopping cart icon">
+                    <span id="cart-count-id" class="cart-count">0</span>
                 </button>
 
             </div>
@@ -83,15 +84,15 @@
                     </div>
                 </div>
                 <div class="price-and-edit">
-                    <p id="price" data-initial-price="2000">2000AMD</p>
+                    <p id="price-des1" data-initial-price="2000">2000AMD</p>
                     <div class="signs">
-                        <button class="plus-button" onclick="addition()">+</button>
-                        <p id="quantity">0</p>
-                        <button class="minus-button" onclick="subtraction()">-</button>
+                        <button class="plus-button" onclick="addition('quantity-des1','price-des1')">+</button>
+                        <p id="quantity-des1">0</p>
+                        <button class="minus-button" onclick="subtraction('quantity-des1','price-des1')">-</button>
                     </div>
                 </div>
                 <div class="order-container">
-                    <button class="order-btn"><strong>ORDER</strong></button>
+                    <button class="pay-btn" onclick="cart_number_change('cart-count-id', 'quantity-des1')"><strong>ORDER</strong></button>
                 </div>
             </div>
             
